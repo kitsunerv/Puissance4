@@ -1,0 +1,249 @@
+\hypertarget{graphical_game_8c}{}\doxysection{src/graphical\+Game.c File Reference}
+\label{graphical_game_8c}\index{src/graphicalGame.c@{src/graphicalGame.c}}
+
+
+contains the graphical game structures and functions.  
+
+
+{\ttfamily \#include \char`\"{}graphical\+Game.\+h\char`\"{}}\newline
+Include dependency graph for graphical\+Game.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{graphical_game_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{graphical_game_8c_ac3f9def0ac002b835dfb025a3585a4c7}{Game\+Screen}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em create and manage the screen of the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphical_game_8c_a30a14b6d1d57201f2c653cbcca71a0a3}{menu\+Screen}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em create and manage the screen of the menu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphical_game_8c_abf1770034e8664b6fcdc43c09a64bbfa}{game\+Over\+Screen}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em create and manage the screen of the game over \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphical_game_8c_aed6d88aa70ae09071da8f2b19c6453b1}{AIScreen1}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em create and manage the screen of the ai difficulty selection when there is only one ai player \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphical_game_8c_a6660fab83eb0fdb2fb6d575225175f66}{AIScreen2}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em create and manage the screen of the ai difficulty selection when there are two ai player \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphical_game_8c_ab7de46eceb473a413fdd81a8552b387a}{gamemode\+Screen}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em create and manage the screen of the gamemode selection \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphical_game_8c_ae88e52f4ad6d6747615af806b5b45a58}{setting\+Screen}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em create and manage the setting screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphical_game_8c_a743fb98f738de24d8886cd789cdf0293}{init\+Graphical}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game, \mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$window, \mbox{\hyperlink{structai}{ai}} $\ast$ia, \mbox{\hyperlink{structconnect4}{connect4}} $\ast$board, int height, int width)
+\begin{DoxyCompactList}\small\item\em initialize the textual game object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphical_game_8c_a9b4743085fd1b85d071c3eccc75fa425}{graphical\+Game}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em starts the game in the graphical display style \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphical_game_8c_ac46aa784783a78f24de548e4aff80f86}{destroy\+Graph}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em destroys the graphical game object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+contains the graphical game structures and functions. 
+
+\begin{DoxyAuthor}{Author}
+Lucas CAGINICOLAU, Brandon CODAN 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{graphical_game_8c_aed6d88aa70ae09071da8f2b19c6453b1}\label{graphical_game_8c_aed6d88aa70ae09071da8f2b19c6453b1}} 
+\index{graphicalGame.c@{graphicalGame.c}!AIScreen1@{AIScreen1}}
+\index{AIScreen1@{AIScreen1}!graphicalGame.c@{graphicalGame.c}}
+\doxysubsubsection{\texorpdfstring{AIScreen1()}{AIScreen1()}}
+{\footnotesize\ttfamily void AIScreen1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+create and manage the screen of the ai difficulty selection when there is only one ai player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & all the graphical game data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file graphical\+Game.\+c.
+
+\mbox{\Hypertarget{graphical_game_8c_a6660fab83eb0fdb2fb6d575225175f66}\label{graphical_game_8c_a6660fab83eb0fdb2fb6d575225175f66}} 
+\index{graphicalGame.c@{graphicalGame.c}!AIScreen2@{AIScreen2}}
+\index{AIScreen2@{AIScreen2}!graphicalGame.c@{graphicalGame.c}}
+\doxysubsubsection{\texorpdfstring{AIScreen2()}{AIScreen2()}}
+{\footnotesize\ttfamily void AIScreen2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+create and manage the screen of the ai difficulty selection when there are two ai player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & all the graphical game data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 222 of file graphical\+Game.\+c.
+
+\mbox{\Hypertarget{graphical_game_8c_ac46aa784783a78f24de548e4aff80f86}\label{graphical_game_8c_ac46aa784783a78f24de548e4aff80f86}} 
+\index{graphicalGame.c@{graphicalGame.c}!destroyGraph@{destroyGraph}}
+\index{destroyGraph@{destroyGraph}!graphicalGame.c@{graphicalGame.c}}
+\doxysubsubsection{\texorpdfstring{destroyGraph()}{destroyGraph()}}
+{\footnotesize\ttfamily void destroy\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+destroys the graphical game object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the object we want detroyed; \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 465 of file graphical\+Game.\+c.
+
+\mbox{\Hypertarget{graphical_game_8c_ab7de46eceb473a413fdd81a8552b387a}\label{graphical_game_8c_ab7de46eceb473a413fdd81a8552b387a}} 
+\index{graphicalGame.c@{graphicalGame.c}!gamemodeScreen@{gamemodeScreen}}
+\index{gamemodeScreen@{gamemodeScreen}!graphicalGame.c@{graphicalGame.c}}
+\doxysubsubsection{\texorpdfstring{gamemodeScreen()}{gamemodeScreen()}}
+{\footnotesize\ttfamily void gamemode\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+create and manage the screen of the gamemode selection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & all the graphical game data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 305 of file graphical\+Game.\+c.
+
+\mbox{\Hypertarget{graphical_game_8c_abf1770034e8664b6fcdc43c09a64bbfa}\label{graphical_game_8c_abf1770034e8664b6fcdc43c09a64bbfa}} 
+\index{graphicalGame.c@{graphicalGame.c}!gameOverScreen@{gameOverScreen}}
+\index{gameOverScreen@{gameOverScreen}!graphicalGame.c@{graphicalGame.c}}
+\doxysubsubsection{\texorpdfstring{gameOverScreen()}{gameOverScreen()}}
+{\footnotesize\ttfamily void game\+Over\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+create and manage the screen of the game over 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & all the graphical game data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 100 of file graphical\+Game.\+c.
+
+\mbox{\Hypertarget{graphical_game_8c_ac3f9def0ac002b835dfb025a3585a4c7}\label{graphical_game_8c_ac3f9def0ac002b835dfb025a3585a4c7}} 
+\index{graphicalGame.c@{graphicalGame.c}!GameScreen@{GameScreen}}
+\index{GameScreen@{GameScreen}!graphicalGame.c@{graphicalGame.c}}
+\doxysubsubsection{\texorpdfstring{GameScreen()}{GameScreen()}}
+{\footnotesize\ttfamily void Game\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+create and manage the screen of the game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & all the graphical game data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file graphical\+Game.\+c.
+
+\mbox{\Hypertarget{graphical_game_8c_a9b4743085fd1b85d071c3eccc75fa425}\label{graphical_game_8c_a9b4743085fd1b85d071c3eccc75fa425}} 
+\index{graphicalGame.c@{graphicalGame.c}!graphicalGame@{graphicalGame}}
+\index{graphicalGame@{graphicalGame}!graphicalGame.c@{graphicalGame.c}}
+\doxysubsubsection{\texorpdfstring{graphicalGame()}{graphicalGame()}}
+{\footnotesize\ttfamily void graphical\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+starts the game in the graphical display style 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game to start \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 431 of file graphical\+Game.\+c.
+
+\mbox{\Hypertarget{graphical_game_8c_a743fb98f738de24d8886cd789cdf0293}\label{graphical_game_8c_a743fb98f738de24d8886cd789cdf0293}} 
+\index{graphicalGame.c@{graphicalGame.c}!initGraphical@{initGraphical}}
+\index{initGraphical@{initGraphical}!graphicalGame.c@{graphicalGame.c}}
+\doxysubsubsection{\texorpdfstring{initGraphical()}{initGraphical()}}
+{\footnotesize\ttfamily void init\+Graphical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{structai}{ai}} $\ast$}]{ia,  }\item[{\mbox{\hyperlink{structconnect4}{connect4}} $\ast$}]{board,  }\item[{int}]{height,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+initialize the textual game object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the object we want initialized \\
+\hline
+{\em window} & the renderer of the graphical window \\
+\hline
+{\em ia} & the ia object for the game \\
+\hline
+{\em board} & the game board \\
+\hline
+{\em height} & the height of the game window \\
+\hline
+{\em width} & the width of the game window \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 417 of file graphical\+Game.\+c.
+
+\mbox{\Hypertarget{graphical_game_8c_a30a14b6d1d57201f2c653cbcca71a0a3}\label{graphical_game_8c_a30a14b6d1d57201f2c653cbcca71a0a3}} 
+\index{graphicalGame.c@{graphicalGame.c}!menuScreen@{menuScreen}}
+\index{menuScreen@{menuScreen}!graphicalGame.c@{graphicalGame.c}}
+\doxysubsubsection{\texorpdfstring{menuScreen()}{menuScreen()}}
+{\footnotesize\ttfamily void menu\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+create and manage the screen of the menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & all the graphical game data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 67 of file graphical\+Game.\+c.
+
+\mbox{\Hypertarget{graphical_game_8c_ae88e52f4ad6d6747615af806b5b45a58}\label{graphical_game_8c_ae88e52f4ad6d6747615af806b5b45a58}} 
+\index{graphicalGame.c@{graphicalGame.c}!settingScreen@{settingScreen}}
+\index{settingScreen@{settingScreen}!graphicalGame.c@{graphicalGame.c}}
+\doxysubsubsection{\texorpdfstring{settingScreen()}{settingScreen()}}
+{\footnotesize\ttfamily void setting\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+create and manage the setting screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & contains all of the graphical game info \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 384 of file graphical\+Game.\+c.
+

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "linkedlist.h": "c",
+        "windowmanager.h": "c",
+        "sdl.h": "c"
+    }
+}

@@ -1,0 +1,273 @@
+\hypertarget{connect4_8h}{}\doxysection{src/connect4.h File Reference}
+\label{connect4_8h}\index{src/connect4.h@{src/connect4.h}}
+
+
+declares the \mbox{\hyperlink{structconnect4}{connect4}} struct and the game related functions.  
+
+
+{\ttfamily \#include \char`\"{}color.\+h\char`\"{}}\newline
+Include dependency graph for connect4.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{connect4_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{connect4_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structconnect4}{connect4}}
+\begin{DoxyCompactList}\small\item\em this struct contains all the data for the game (the game grid, number of tokens in each column,width and height of the graphical,the radius of the tokens,current player, which plaer plays red tokens, a check if the board is tied and the whole grid of pixels to be rendered for the graphical window) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{connect4_8h_a4d4302f99b56d3072a2e33cecc620772}{init}} (\mbox{\hyperlink{structconnect4}{connect4}} $\ast$board, int width, int height)
+\begin{DoxyCompactList}\small\item\em initilaze the \mbox{\hyperlink{structconnect4}{connect4}} object with the specified width and height for the graphical window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{connect4_8h_a655cf328186bd42e46eb549e52fd5dc0}{played}} (\mbox{\hyperlink{structconnect4}{connect4}} $\ast$board, int col)
+\begin{DoxyCompactList}\small\item\em execute a move \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{connect4_8h_a3afa745589c94dfa66182e4cb55c5e5a}{draw}} (\mbox{\hyperlink{structconnect4}{connect4}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em draws the background of the bord then call the function update which draws the pieces or empty slots \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{connect4_8h_a22f3c6cce80ff4ce32b62ae19b351b12}{update}} (\mbox{\hyperlink{structconnect4}{connect4}} $\ast$board, int x, int y)
+\begin{DoxyCompactList}\small\item\em draws the slot passed int parameters with the x and y coordinate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{connect4_8h_aaec97717b82d027fc0fd334accd1b232}{destroy}} (\mbox{\hyperlink{structconnect4}{connect4}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em destroys the object passed in parameter \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{connect4_8h_a15676746f210aef837812a4082b83eff}{horizontal}} (int board\mbox{[}6\mbox{]}\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em checks if someone won in a horizontal motif \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{connect4_8h_a85c47fbd95c0bca0ecd019df23421350}{vertical}} (int board\mbox{[}6\mbox{]}\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em checks if someone won in a vertical motif \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{connect4_8h_a627db0c0869f06cb1f8aab70ff2faea3}{slash}} (int board\mbox{[}6\mbox{]}\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em checks if someone won in a diagonal motif in the same orentation as a slah (/) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{connect4_8h_a0de9a743bb88dc3768fa83ce7f7ba04e}{backslash}} (int board\mbox{[}6\mbox{]}\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em checks if someone won in a diagonal motif in the same orentation as a backslah () \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{connect4_8h_a3848f43c5ab6c6b29853fc7941b769a9}{reset}} (\mbox{\hyperlink{structconnect4}{connect4}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em resets the data of the board in parameter \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+declares the \mbox{\hyperlink{structconnect4}{connect4}} struct and the game related functions. 
+
+\begin{DoxyAuthor}{Authors}
+Lucas CAGINICOLAU, Brandon CODAN 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{connect4_8h_a0de9a743bb88dc3768fa83ce7f7ba04e}\label{connect4_8h_a0de9a743bb88dc3768fa83ce7f7ba04e}} 
+\index{connect4.h@{connect4.h}!backslash@{backslash}}
+\index{backslash@{backslash}!connect4.h@{connect4.h}}
+\doxysubsubsection{\texorpdfstring{backslash()}{backslash()}}
+{\footnotesize\ttfamily int backslash (\begin{DoxyParamCaption}\item[{int}]{board\mbox{[}6\mbox{]}\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+checks if someone won in a diagonal motif in the same orentation as a backslah () 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the game board that we want to test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if someone won with a backslash diagonal else 0 
+\end{DoxyReturn}
+
+
+Definition at line 109 of file connect4.\+c.
+
+\mbox{\Hypertarget{connect4_8h_aaec97717b82d027fc0fd334accd1b232}\label{connect4_8h_aaec97717b82d027fc0fd334accd1b232}} 
+\index{connect4.h@{connect4.h}!destroy@{destroy}}
+\index{destroy@{destroy}!connect4.h@{connect4.h}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconnect4}{connect4}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+destroys the object passed in parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the object we want destroyed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 105 of file connect4.\+c.
+
+\mbox{\Hypertarget{connect4_8h_a3afa745589c94dfa66182e4cb55c5e5a}\label{connect4_8h_a3afa745589c94dfa66182e4cb55c5e5a}} 
+\index{connect4.h@{connect4.h}!draw@{draw}}
+\index{draw@{draw}!connect4.h@{connect4.h}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconnect4}{connect4}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+draws the background of the bord then call the function update which draws the pieces or empty slots 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the game we want to draw \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file connect4.\+c.
+
+\mbox{\Hypertarget{connect4_8h_a15676746f210aef837812a4082b83eff}\label{connect4_8h_a15676746f210aef837812a4082b83eff}} 
+\index{connect4.h@{connect4.h}!horizontal@{horizontal}}
+\index{horizontal@{horizontal}!connect4.h@{connect4.h}}
+\doxysubsubsection{\texorpdfstring{horizontal()}{horizontal()}}
+{\footnotesize\ttfamily int horizontal (\begin{DoxyParamCaption}\item[{int}]{board\mbox{[}6\mbox{]}\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+checks if someone won in a horizontal motif 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the game board that we want to test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if someone won with a horizontal motif else 0 
+\end{DoxyReturn}
+
+
+Definition at line 157 of file connect4.\+c.
+
+\mbox{\Hypertarget{connect4_8h_a4d4302f99b56d3072a2e33cecc620772}\label{connect4_8h_a4d4302f99b56d3072a2e33cecc620772}} 
+\index{connect4.h@{connect4.h}!init@{init}}
+\index{init@{init}!connect4.h@{connect4.h}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconnect4}{connect4}} $\ast$}]{board,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+initilaze the \mbox{\hyperlink{structconnect4}{connect4}} object with the specified width and height for the graphical window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the object we want to initialize \\
+\hline
+{\em width} & the width of the graphical wiondow \\
+\hline
+{\em height} & the height of the graphical wiondow \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file connect4.\+c.
+
+\mbox{\Hypertarget{connect4_8h_a655cf328186bd42e46eb549e52fd5dc0}\label{connect4_8h_a655cf328186bd42e46eb549e52fd5dc0}} 
+\index{connect4.h@{connect4.h}!played@{played}}
+\index{played@{played}!connect4.h@{connect4.h}}
+\doxysubsubsection{\texorpdfstring{played()}{played()}}
+{\footnotesize\ttfamily void played (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconnect4}{connect4}} $\ast$}]{board,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+execute a move 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the game \\
+\hline
+{\em col} & the column played \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 95 of file connect4.\+c.
+
+\mbox{\Hypertarget{connect4_8h_a3848f43c5ab6c6b29853fc7941b769a9}\label{connect4_8h_a3848f43c5ab6c6b29853fc7941b769a9}} 
+\index{connect4.h@{connect4.h}!reset@{reset}}
+\index{reset@{reset}!connect4.h@{connect4.h}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconnect4}{connect4}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+resets the data of the board in parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the board we want reset \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 173 of file connect4.\+c.
+
+\mbox{\Hypertarget{connect4_8h_a627db0c0869f06cb1f8aab70ff2faea3}\label{connect4_8h_a627db0c0869f06cb1f8aab70ff2faea3}} 
+\index{connect4.h@{connect4.h}!slash@{slash}}
+\index{slash@{slash}!connect4.h@{connect4.h}}
+\doxysubsubsection{\texorpdfstring{slash()}{slash()}}
+{\footnotesize\ttfamily int slash (\begin{DoxyParamCaption}\item[{int}]{board\mbox{[}6\mbox{]}\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+checks if someone won in a diagonal motif in the same orentation as a slah (/) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the game board that we want to test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if someone won with a slash diagonal else 0 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file connect4.\+c.
+
+\mbox{\Hypertarget{connect4_8h_a22f3c6cce80ff4ce32b62ae19b351b12}\label{connect4_8h_a22f3c6cce80ff4ce32b62ae19b351b12}} 
+\index{connect4.h@{connect4.h}!update@{update}}
+\index{update@{update}!connect4.h@{connect4.h}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconnect4}{connect4}} $\ast$}]{board,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+draws the slot passed int parameters with the x and y coordinate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the object we want to update \\
+\hline
+{\em x} & the x coordinate of the slot we want updated \\
+\hline
+{\em y} & the y coordinate of the slot we want updated \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file connect4.\+c.
+
+\mbox{\Hypertarget{connect4_8h_a85c47fbd95c0bca0ecd019df23421350}\label{connect4_8h_a85c47fbd95c0bca0ecd019df23421350}} 
+\index{connect4.h@{connect4.h}!vertical@{vertical}}
+\index{vertical@{vertical}!connect4.h@{connect4.h}}
+\doxysubsubsection{\texorpdfstring{vertical()}{vertical()}}
+{\footnotesize\ttfamily int vertical (\begin{DoxyParamCaption}\item[{int}]{board\mbox{[}6\mbox{]}\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+checks if someone won in a vertical motif 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the game board that we want to test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if someone won with a vertical motif else 0 
+\end{DoxyReturn}
+
+
+Definition at line 141 of file connect4.\+c.
+

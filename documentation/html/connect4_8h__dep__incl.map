@@ -1,0 +1,11 @@
+<map id="src/connect4.h" name="src/connect4.h">
+<area shape="rect" id="node1" title="declares the connect4 struct and the game related functions." alt="" coords="367,5,483,32"/>
+<area shape="rect" id="node2" href="$ai_8c.html" title="all the ai functions." alt="" coords="5,155,73,181"/>
+<area shape="rect" id="node3" href="$ai_8h.html" title="contains the declaration of the ai struct and main ai function as the other function should&#39;nt be cal..." alt="" coords="307,80,377,107"/>
+<area shape="rect" id="node6" href="$main_8c.html" title="the main game functions." alt="" coords="428,229,517,256"/>
+<area shape="rect" id="node9" href="$connect4_8c.html" title="all the game related functions." alt="" coords="546,80,661,107"/>
+<area shape="rect" id="node4" href="$graphical_game_8h.html" title="declares the graphical game structures and functions." alt="" coords="264,155,420,181"/>
+<area shape="rect" id="node7" href="$textual_game_8h.html" title="contains the textual game structures and functions." alt="" coords="97,155,240,181"/>
+<area shape="rect" id="node5" href="$graphical_game_8c.html" title="contains the graphical game structures and functions." alt="" coords="249,229,403,256"/>
+<area shape="rect" id="node8" href="$textual_game_8c.html" title="contains the textual game structures and functions." alt="" coords="83,229,225,256"/>
+</map>

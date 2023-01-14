@@ -1,0 +1,4 @@
+<map id="connect4" name="connect4">
+<area shape="rect" id="node1" title="this struct contains all the data for the game (the game grid, number of tokens in each column,..." alt="" coords="5,95,87,121"/>
+<area shape="rect" id="node2" href="$structcolor.html" title="this structure is how pixels colors are managed" alt="" coords="19,5,73,32"/>
+</map>

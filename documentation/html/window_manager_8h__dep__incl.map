@@ -1,0 +1,7 @@
+<map id="src/windowManager.h" name="src/windowManager.h">
+<area shape="rect" id="node1" title="declares the windowManager struct and all the rendering/display related functions." alt="" coords="148,5,311,32"/>
+<area shape="rect" id="node2" href="$graphical_game_8h.html" title="declares the graphical game structures and functions." alt="" coords="35,80,191,107"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="the main game functions." alt="" coords="185,155,274,181"/>
+<area shape="rect" id="node5" href="$window_manager_8c.html" title="contains all the rendering/display related functions." alt="" coords="267,80,429,107"/>
+<area shape="rect" id="node3" href="$graphical_game_8c.html" title="contains the graphical game structures and functions." alt="" coords="5,155,160,181"/>
+</map>

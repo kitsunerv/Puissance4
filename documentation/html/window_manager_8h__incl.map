@@ -1,0 +1,5 @@
+<map id="src/windowManager.h" name="src/windowManager.h">
+<area shape="rect" id="node1" title="declares the windowManager struct and all the rendering/display related functions." alt="" coords="24,5,187,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,101,107"/>
+<area shape="rect" id="node3" href="$color_8h.html" title="declares the color struct and all colors used throughout the graphiccal game." alt="" coords="126,80,191,107"/>
+</map>

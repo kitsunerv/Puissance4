@@ -1,0 +1,130 @@
+\hypertarget{graphical_game_8h}{}\doxysection{src/graphical\+Game.h File Reference}
+\label{graphical_game_8h}\index{src/graphicalGame.h@{src/graphicalGame.h}}
+
+
+declares the graphical game structures and functions.  
+
+
+{\ttfamily \#include \char`\"{}window\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ai.\+h\char`\"{}}\newline
+Include dependency graph for graphical\+Game.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{graphical_game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{graphical_game_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgraphical}{graphical}}
+\begin{DoxyCompactList}\small\item\em contains all the data required to make the graphical game run \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{graphical_game_8h_adeca8ef940edb224e5ce8d0814d3a5dc}\label{graphical_game_8h_adeca8ef940edb224e5ce8d0814d3a5dc}} 
+enum \mbox{\hyperlink{graphical_game_8h_adeca8ef940edb224e5ce8d0814d3a5dc}{Gstates}} \{ \newline
+{\bfseries MENU}
+, {\bfseries GAME}
+, {\bfseries GAMEOVER}
+, {\bfseries AISCREEN}
+, \newline
+{\bfseries GAMEMODE}
+, {\bfseries END}
+, {\bfseries SETTING}
+ \}
+\begin{DoxyCompactList}\small\item\em this enum contains a definition for all states of the graphical game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{graphical_game_8h_a743fb98f738de24d8886cd789cdf0293}{init\+Graphical}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game, \mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$window, \mbox{\hyperlink{structai}{ai}} $\ast$ia, \mbox{\hyperlink{structconnect4}{connect4}} $\ast$board, int height, int width)
+\begin{DoxyCompactList}\small\item\em initialize the textual game object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphical_game_8h_a9b4743085fd1b85d071c3eccc75fa425}{graphical\+Game}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em starts the game in the graphical display style \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphical_game_8h_ac46aa784783a78f24de548e4aff80f86}{destroy\+Graph}} (\mbox{\hyperlink{structgraphical}{graphical}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em destroys the graphical game object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+declares the graphical game structures and functions. 
+
+\begin{DoxyAuthor}{Author}
+Lucas CAGINICOLAU, Brandon CODAN 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{graphical_game_8h_ac46aa784783a78f24de548e4aff80f86}\label{graphical_game_8h_ac46aa784783a78f24de548e4aff80f86}} 
+\index{graphicalGame.h@{graphicalGame.h}!destroyGraph@{destroyGraph}}
+\index{destroyGraph@{destroyGraph}!graphicalGame.h@{graphicalGame.h}}
+\doxysubsubsection{\texorpdfstring{destroyGraph()}{destroyGraph()}}
+{\footnotesize\ttfamily void destroy\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+destroys the graphical game object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the object we want detroyed; \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 465 of file graphical\+Game.\+c.
+
+\mbox{\Hypertarget{graphical_game_8h_a9b4743085fd1b85d071c3eccc75fa425}\label{graphical_game_8h_a9b4743085fd1b85d071c3eccc75fa425}} 
+\index{graphicalGame.h@{graphicalGame.h}!graphicalGame@{graphicalGame}}
+\index{graphicalGame@{graphicalGame}!graphicalGame.h@{graphicalGame.h}}
+\doxysubsubsection{\texorpdfstring{graphicalGame()}{graphicalGame()}}
+{\footnotesize\ttfamily void graphical\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+starts the game in the graphical display style 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game to start \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 431 of file graphical\+Game.\+c.
+
+\mbox{\Hypertarget{graphical_game_8h_a743fb98f738de24d8886cd789cdf0293}\label{graphical_game_8h_a743fb98f738de24d8886cd789cdf0293}} 
+\index{graphicalGame.h@{graphicalGame.h}!initGraphical@{initGraphical}}
+\index{initGraphical@{initGraphical}!graphicalGame.h@{graphicalGame.h}}
+\doxysubsubsection{\texorpdfstring{initGraphical()}{initGraphical()}}
+{\footnotesize\ttfamily void init\+Graphical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgraphical}{graphical}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{structai}{ai}} $\ast$}]{ia,  }\item[{\mbox{\hyperlink{structconnect4}{connect4}} $\ast$}]{board,  }\item[{int}]{height,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+initialize the textual game object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the object we want initialized \\
+\hline
+{\em window} & the renderer of the graphical window \\
+\hline
+{\em ia} & the ia object for the game \\
+\hline
+{\em board} & the game board \\
+\hline
+{\em height} & the height of the game window \\
+\hline
+{\em width} & the width of the game window \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 417 of file graphical\+Game.\+c.
+

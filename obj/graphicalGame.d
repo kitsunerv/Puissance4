@@ -1,0 +1,52 @@
+obj/graphicalGame.o: src/graphicalGame.c src/graphicalGame.h \
+ src/windowManager.h 3rdParty/SDL2/Library/include/SDL2/SDL.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_main.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_stdinc.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_config.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_platform.h \
+ 3rdParty/SDL2/Library/include/SDL2/begin_code.h \
+ 3rdParty/SDL2/Library/include/SDL2/close_code.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_assert.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_atomic.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_audio.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_error.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_endian.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_mutex.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_thread.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_rwops.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_clipboard.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_cpuinfo.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_events.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_video.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_pixels.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_rect.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_surface.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_blendmode.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_keyboard.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_keycode.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_scancode.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_mouse.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_joystick.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_guid.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_gamecontroller.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_sensor.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_quit.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_gesture.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_touch.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_filesystem.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_haptic.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_hidapi.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_hints.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_loadso.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_log.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_messagebox.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_metal.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_power.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_render.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_shape.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_system.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_timer.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_version.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_locale.h \
+ 3rdParty/SDL2/Library/include/SDL2/SDL_misc.h src/color.h src/ai.h \
+ src/connect4.h

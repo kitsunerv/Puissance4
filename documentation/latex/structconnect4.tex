@@ -1,0 +1,137 @@
+\hypertarget{structconnect4}{}\doxysection{connect4 Struct Reference}
+\label{structconnect4}\index{connect4@{connect4}}
+
+
+this struct contains all the data for the game (the game grid, number of tokens in each column,width and height of the graphical,the radius of the tokens,current player, which plaer plays red tokens, a check if the board is tied and the whole grid of pixels to be rendered for the graphical window)  
+
+
+
+
+{\ttfamily \#include $<$connect4.\+h$>$}
+
+
+
+Collaboration diagram for connect4\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{structconnect4__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structconnect4_a854ff2f60014643ec8793d530a97d1ae}\label{structconnect4_a854ff2f60014643ec8793d530a97d1ae}} 
+int {\bfseries data} \mbox{[}6\mbox{]}\mbox{[}7\mbox{]}
+\item 
+int \mbox{\hyperlink{structconnect4_a7f8c71c613ca8d799a50aad3dc423e1c}{colstate}} \mbox{[}7\mbox{]}
+\item 
+unsigned \mbox{\hyperlink{structconnect4_a7fa72fbc1c4226b0615406b9d8f540ed}{width}}
+\item 
+unsigned \mbox{\hyperlink{structconnect4_aca36c0160c03c1526c37eb18fff3fe3d}{height}}
+\item 
+int \mbox{\hyperlink{structconnect4_a395279899207ce7f17adf9fdb8ee97ee}{radius}}
+\item 
+int \mbox{\hyperlink{structconnect4_ae78f447e0fc84c538b91b0cc8c8a34fa}{player}}
+\item 
+int \mbox{\hyperlink{structconnect4_a6761340706096510fd89edca40a63b9b}{red}}
+\item 
+int \mbox{\hyperlink{structconnect4_a1c9e60fcb1586d2a6b45ca7149ee6b7b}{tie}}
+\item 
+\mbox{\hyperlink{structcolor}{color}} $\ast$ \mbox{\hyperlink{structconnect4_a30d7ea2bf45a55a8f63bb20885a60a9a}{pixels}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this struct contains all the data for the game (the game grid, number of tokens in each column,width and height of the graphical,the radius of the tokens,current player, which plaer plays red tokens, a check if the board is tied and the whole grid of pixels to be rendered for the graphical window) 
+
+Definition at line 16 of file connect4.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structconnect4_a7f8c71c613ca8d799a50aad3dc423e1c}\label{structconnect4_a7f8c71c613ca8d799a50aad3dc423e1c}} 
+\index{connect4@{connect4}!colstate@{colstate}}
+\index{colstate@{colstate}!connect4@{connect4}}
+\doxysubsubsection{\texorpdfstring{colstate}{colstate}}
+{\footnotesize\ttfamily int colstate\mbox{[}7\mbox{]}}
+
+the matrix containnig the states of each cells of the board 
+
+Definition at line 18 of file connect4.\+h.
+
+\mbox{\Hypertarget{structconnect4_aca36c0160c03c1526c37eb18fff3fe3d}\label{structconnect4_aca36c0160c03c1526c37eb18fff3fe3d}} 
+\index{connect4@{connect4}!height@{height}}
+\index{height@{height}!connect4@{connect4}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily unsigned height}
+
+the width of the board in pixels 
+
+Definition at line 20 of file connect4.\+h.
+
+\mbox{\Hypertarget{structconnect4_a30d7ea2bf45a55a8f63bb20885a60a9a}\label{structconnect4_a30d7ea2bf45a55a8f63bb20885a60a9a}} 
+\index{connect4@{connect4}!pixels@{pixels}}
+\index{pixels@{pixels}!connect4@{connect4}}
+\doxysubsubsection{\texorpdfstring{pixels}{pixels}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcolor}{color}}$\ast$ pixels}
+
+value to checks if the game is tied 
+
+Definition at line 25 of file connect4.\+h.
+
+\mbox{\Hypertarget{structconnect4_ae78f447e0fc84c538b91b0cc8c8a34fa}\label{structconnect4_ae78f447e0fc84c538b91b0cc8c8a34fa}} 
+\index{connect4@{connect4}!player@{player}}
+\index{player@{player}!connect4@{connect4}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily int player}
+
+the radius of the tokens in pixels 
+
+Definition at line 22 of file connect4.\+h.
+
+\mbox{\Hypertarget{structconnect4_a395279899207ce7f17adf9fdb8ee97ee}\label{structconnect4_a395279899207ce7f17adf9fdb8ee97ee}} 
+\index{connect4@{connect4}!radius@{radius}}
+\index{radius@{radius}!connect4@{connect4}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily int radius}
+
+the height of the board in pixels 
+
+Definition at line 21 of file connect4.\+h.
+
+\mbox{\Hypertarget{structconnect4_a6761340706096510fd89edca40a63b9b}\label{structconnect4_a6761340706096510fd89edca40a63b9b}} 
+\index{connect4@{connect4}!red@{red}}
+\index{red@{red}!connect4@{connect4}}
+\doxysubsubsection{\texorpdfstring{red}{red}}
+{\footnotesize\ttfamily int red}
+
+the current player (0 = player1, 1 = player2) 
+
+Definition at line 23 of file connect4.\+h.
+
+\mbox{\Hypertarget{structconnect4_a1c9e60fcb1586d2a6b45ca7149ee6b7b}\label{structconnect4_a1c9e60fcb1586d2a6b45ca7149ee6b7b}} 
+\index{connect4@{connect4}!tie@{tie}}
+\index{tie@{tie}!connect4@{connect4}}
+\doxysubsubsection{\texorpdfstring{tie}{tie}}
+{\footnotesize\ttfamily int tie}
+
+which player plays the red tokens (0 = player1, 1 = player2) 
+
+Definition at line 24 of file connect4.\+h.
+
+\mbox{\Hypertarget{structconnect4_a7fa72fbc1c4226b0615406b9d8f540ed}\label{structconnect4_a7fa72fbc1c4226b0615406b9d8f540ed}} 
+\index{connect4@{connect4}!width@{width}}
+\index{width@{width}!connect4@{connect4}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily unsigned width}
+
+the list contining the number of tokens in each columns 
+
+Definition at line 19 of file connect4.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{connect4_8h}{connect4.\+h}}\end{DoxyCompactItemize}

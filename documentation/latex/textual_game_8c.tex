@@ -1,0 +1,155 @@
+\hypertarget{textual_game_8c}{}\doxysection{src/textual\+Game.c File Reference}
+\label{textual_game_8c}\index{src/textualGame.c@{src/textualGame.c}}
+
+
+contains the textual game structures and functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}textual\+Game.\+h\char`\"{}}\newline
+Include dependency graph for textual\+Game.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{textual_game_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{textual_game_8c_a1619a622210c2bb0a94f4238eb2bd83f}\label{textual_game_8c_a1619a622210c2bb0a94f4238eb2bd83f}} 
+void \mbox{\hyperlink{textual_game_8c_a1619a622210c2bb0a94f4238eb2bd83f}{aff\+Grille}} (int board\mbox{[}$\,$\mbox{]}\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em displays the board for the textual style \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{textual_game_8c_a7a630e9e5f82aeb9c8fe2902525afe75}\label{textual_game_8c_a7a630e9e5f82aeb9c8fe2902525afe75}} 
+void \mbox{\hyperlink{textual_game_8c_a7a630e9e5f82aeb9c8fe2902525afe75}{p\+Inputs}} (\mbox{\hyperlink{structconnect4}{connect4}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em takes a human player inputs and executes them \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{textual_game_8c_a4deba1f243062d7f47f1bbe6ddc36efa}{a\+Init}} (int $\ast$\mbox{\hyperlink{structai}{ai}}, int nb)
+\begin{DoxyCompactList}\small\item\em change the difficulty of the ai passed in parameter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{textual_game_8c_a4b4544526cfa8ea4de63fe0694238ea0}{Ginit}} (int $\ast$ai1, int $\ast$ai2)
+\begin{DoxyCompactList}\small\item\em the selection of the gamemode and calls the selection of the \mbox{\hyperlink{structai}{ai(s)}} difficulty \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{textual_game_8c_a875a06df3081856a1a63fe391d76b38a}{init\+Textual}} (\mbox{\hyperlink{structtextual}{textual}} $\ast$game, \mbox{\hyperlink{structai}{ai}} $\ast$ia, \mbox{\hyperlink{structconnect4}{connect4}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em initialize the textual game object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{textual_game_8c_af91b72c0b018b92e77d5eaaed883cc16}{textual\+Game}} (\mbox{\hyperlink{structtextual}{textual}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em starts the game in the textual display style \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{textual_game_8c_a5e17d52df33b15d6f01e714b39f16e90}{destroy\+Text}} (\mbox{\hyperlink{structtextual}{textual}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em destroys the textual game object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+contains the textual game structures and functions. 
+
+\begin{DoxyAuthor}{Author}
+Lucas CAGINICOLAU, Brandon CODAN 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{textual_game_8c_a4deba1f243062d7f47f1bbe6ddc36efa}\label{textual_game_8c_a4deba1f243062d7f47f1bbe6ddc36efa}} 
+\index{textualGame.c@{textualGame.c}!aInit@{aInit}}
+\index{aInit@{aInit}!textualGame.c@{textualGame.c}}
+\doxysubsubsection{\texorpdfstring{aInit()}{aInit()}}
+{\footnotesize\ttfamily void a\+Init (\begin{DoxyParamCaption}\item[{int $\ast$}]{ai,  }\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+change the difficulty of the ai passed in parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ai} & the ai we want to select the difficulty of \\
+\hline
+{\em nb} & no real importance used for display purpose only\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+set the value of the ai parameters to the chosen difficulty 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file textual\+Game.\+c.
+
+\mbox{\Hypertarget{textual_game_8c_a5e17d52df33b15d6f01e714b39f16e90}\label{textual_game_8c_a5e17d52df33b15d6f01e714b39f16e90}} 
+\index{textualGame.c@{textualGame.c}!destroyText@{destroyText}}
+\index{destroyText@{destroyText}!textualGame.c@{textualGame.c}}
+\doxysubsubsection{\texorpdfstring{destroyText()}{destroyText()}}
+{\footnotesize\ttfamily void destroy\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtextual}{textual}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+destroys the textual game object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the object we want detroyed; \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file textual\+Game.\+c.
+
+\mbox{\Hypertarget{textual_game_8c_a4b4544526cfa8ea4de63fe0694238ea0}\label{textual_game_8c_a4b4544526cfa8ea4de63fe0694238ea0}} 
+\index{textualGame.c@{textualGame.c}!Ginit@{Ginit}}
+\index{Ginit@{Ginit}!textualGame.c@{textualGame.c}}
+\doxysubsubsection{\texorpdfstring{Ginit()}{Ginit()}}
+{\footnotesize\ttfamily void Ginit (\begin{DoxyParamCaption}\item[{int $\ast$}]{ai1,  }\item[{int $\ast$}]{ai2 }\end{DoxyParamCaption})}
+
+
+
+the selection of the gamemode and calls the selection of the \mbox{\hyperlink{structai}{ai(s)}} difficulty 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ai1} & difficulty of ai1 \\
+\hline
+{\em ai2} & difficulty of ai2\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+put the variables in parameter to their difficulty 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file textual\+Game.\+c.
+
+\mbox{\Hypertarget{textual_game_8c_a875a06df3081856a1a63fe391d76b38a}\label{textual_game_8c_a875a06df3081856a1a63fe391d76b38a}} 
+\index{textualGame.c@{textualGame.c}!initTextual@{initTextual}}
+\index{initTextual@{initTextual}!textualGame.c@{textualGame.c}}
+\doxysubsubsection{\texorpdfstring{initTextual()}{initTextual()}}
+{\footnotesize\ttfamily void init\+Textual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtextual}{textual}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{structai}{ai}} $\ast$}]{ia,  }\item[{\mbox{\hyperlink{structconnect4}{connect4}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+initialize the textual game object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the object we want initialized \\
+\hline
+{\em ia} & the ia object for the game \\
+\hline
+{\em board} & the game board \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 117 of file textual\+Game.\+c.
+
+\mbox{\Hypertarget{textual_game_8c_af91b72c0b018b92e77d5eaaed883cc16}\label{textual_game_8c_af91b72c0b018b92e77d5eaaed883cc16}} 
+\index{textualGame.c@{textualGame.c}!textualGame@{textualGame}}
+\index{textualGame@{textualGame}!textualGame.c@{textualGame.c}}
+\doxysubsubsection{\texorpdfstring{textualGame()}{textualGame()}}
+{\footnotesize\ttfamily void textual\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtextual}{textual}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+starts the game in the textual display style 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game to start \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file textual\+Game.\+c.
+

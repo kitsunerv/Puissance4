@@ -1,0 +1,9 @@
+<map id="src/ai.h" name="src/ai.h">
+<area shape="rect" id="node1" title="contains the declaration of the ai struct and main ai function as the other function should&#39;nt be cal..." alt="" coords="198,5,267,32"/>
+<area shape="rect" id="node2" href="$ai_8c.html" title="all the ai functions." alt="" coords="5,80,73,107"/>
+<area shape="rect" id="node3" href="$graphical_game_8h.html" title="declares the graphical game structures and functions." alt="" coords="97,80,253,107"/>
+<area shape="rect" id="node5" href="$main_8c.html" title="the main game functions." alt="" coords="247,155,336,181"/>
+<area shape="rect" id="node6" href="$textual_game_8h.html" title="contains the textual game structures and functions." alt="" coords="329,80,472,107"/>
+<area shape="rect" id="node4" href="$graphical_game_8c.html" title="contains the graphical game structures and functions." alt="" coords="67,155,222,181"/>
+<area shape="rect" id="node7" href="$textual_game_8c.html" title="contains the textual game structures and functions." alt="" coords="361,155,502,181"/>
+</map>

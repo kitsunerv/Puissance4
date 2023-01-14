@@ -1,0 +1,108 @@
+\hypertarget{textual_game_8h}{}\doxysection{src/textual\+Game.h File Reference}
+\label{textual_game_8h}\index{src/textualGame.h@{src/textualGame.h}}
+
+
+contains the textual game structures and functions.  
+
+
+{\ttfamily \#include \char`\"{}ai.\+h\char`\"{}}\newline
+Include dependency graph for textual\+Game.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{textual_game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{textual_game_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtextual}{textual}}
+\begin{DoxyCompactList}\small\item\em contains all the data required to make the graphical game run \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{textual_game_8h_a875a06df3081856a1a63fe391d76b38a}{init\+Textual}} (\mbox{\hyperlink{structtextual}{textual}} $\ast$game, \mbox{\hyperlink{structai}{ai}} $\ast$ia, \mbox{\hyperlink{structconnect4}{connect4}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em initialize the textual game object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{textual_game_8h_af91b72c0b018b92e77d5eaaed883cc16}{textual\+Game}} (\mbox{\hyperlink{structtextual}{textual}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em starts the game in the textual display style \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{textual_game_8h_a5e17d52df33b15d6f01e714b39f16e90}{destroy\+Text}} (\mbox{\hyperlink{structtextual}{textual}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em destroys the textual game object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+contains the textual game structures and functions. 
+
+\begin{DoxyAuthor}{Author}
+Lucas CAGINICOLAU, Brandon CODAN 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{textual_game_8h_a5e17d52df33b15d6f01e714b39f16e90}\label{textual_game_8h_a5e17d52df33b15d6f01e714b39f16e90}} 
+\index{textualGame.h@{textualGame.h}!destroyText@{destroyText}}
+\index{destroyText@{destroyText}!textualGame.h@{textualGame.h}}
+\doxysubsubsection{\texorpdfstring{destroyText()}{destroyText()}}
+{\footnotesize\ttfamily void destroy\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtextual}{textual}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+destroys the textual game object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the object we want detroyed; \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file textual\+Game.\+c.
+
+\mbox{\Hypertarget{textual_game_8h_a875a06df3081856a1a63fe391d76b38a}\label{textual_game_8h_a875a06df3081856a1a63fe391d76b38a}} 
+\index{textualGame.h@{textualGame.h}!initTextual@{initTextual}}
+\index{initTextual@{initTextual}!textualGame.h@{textualGame.h}}
+\doxysubsubsection{\texorpdfstring{initTextual()}{initTextual()}}
+{\footnotesize\ttfamily void init\+Textual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtextual}{textual}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{structai}{ai}} $\ast$}]{ia,  }\item[{\mbox{\hyperlink{structconnect4}{connect4}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+initialize the textual game object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the object we want initialized \\
+\hline
+{\em ia} & the ia object for the game \\
+\hline
+{\em board} & the game board \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 117 of file textual\+Game.\+c.
+
+\mbox{\Hypertarget{textual_game_8h_af91b72c0b018b92e77d5eaaed883cc16}\label{textual_game_8h_af91b72c0b018b92e77d5eaaed883cc16}} 
+\index{textualGame.h@{textualGame.h}!textualGame@{textualGame}}
+\index{textualGame@{textualGame}!textualGame.h@{textualGame.h}}
+\doxysubsubsection{\texorpdfstring{textualGame()}{textualGame()}}
+{\footnotesize\ttfamily void textual\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtextual}{textual}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+starts the game in the textual display style 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game to start \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file textual\+Game.\+c.
+

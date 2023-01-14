@@ -1,0 +1,7 @@
+<map id="graphical" name="graphical">
+<area shape="rect" id="node1" title="contains all the data required to make the graphical game run" alt="" coords="137,184,219,211"/>
+<area shape="rect" id="node2" href="$structwindow_manager.html" title="the structure responsible for rendering the graphical display" alt="" coords="5,95,135,121"/>
+<area shape="rect" id="node3" href="$structai.html" title="struct containing tha ais data (nb and difficulty of each)" alt="" coords="159,95,197,121"/>
+<area shape="rect" id="node4" href="$structconnect4.html" title="this struct contains all the data for the game (the game grid, number of tokens in each column,..." alt="" coords="221,95,303,121"/>
+<area shape="rect" id="node5" href="$structcolor.html" title="this structure is how pixels colors are managed" alt="" coords="235,5,289,32"/>
+</map>

@@ -1,0 +1,168 @@
+\hypertarget{ai_8c}{}\doxysection{src/ai.c File Reference}
+\label{ai_8c}\index{src/ai.c@{src/ai.c}}
+
+
+all the ai functions.  
+
+
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}ai.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}connect4.\+h\char`\"{}}\newline
+Include dependency graph for ai.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ai_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{ai_8c_ad0e1ba1fa41696f69226a65d116b7bec}{winnable}} (int p, int board\mbox{[}$\,$\mbox{]}\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em checks if the player in the parameters can win \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ai_8c_a09fcca915d63fde564cd12750a9adf07}{block}} (int p, int tempboard\mbox{[}$\,$\mbox{]}\mbox{[}7\mbox{]}, int $\ast$forbidden, int $\ast$nb)
+\begin{DoxyCompactList}\small\item\em test which collumns to avoid since playing them would lead to the other player\textquotesingle{}s win \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{ai_8c_aec59e8bd55bb61f00db3b34350429f3f}{count}} (int board\mbox{[}$\,$\mbox{]}\mbox{[}7\mbox{]}, int p)
+\begin{DoxyCompactList}\small\item\em counts how many possibility to win the player passed in parameters has to win \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{ai_8c_a148de28d30a07ec3f648dadeec80b3a1}{forkblock}} (int p, int board\mbox{[}$\,$\mbox{]}\mbox{[}7\mbox{]}, int forbidden\mbox{[}$\,$\mbox{]}, int $\ast$nb)
+\begin{DoxyCompactList}\small\item\em checks if there is a column in which if the other player played it would lead to him having two ways to win \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{ai_8c_a83bf3e3e8282da18ad8218d6d3b7dc38}{ai\+\_\+player}} (\mbox{\hyperlink{structconnect4}{connect4}} $\ast$board, int diff)
+\begin{DoxyCompactList}\small\item\em this is big brain time \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+all the ai functions. 
+
+\begin{DoxyAuthor}{Authors}
+Lucas CAGINICOLAU, Brandon CODAN 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ai_8c_a83bf3e3e8282da18ad8218d6d3b7dc38}\label{ai_8c_a83bf3e3e8282da18ad8218d6d3b7dc38}} 
+\index{ai.c@{ai.c}!ai\_player@{ai\_player}}
+\index{ai\_player@{ai\_player}!ai.c@{ai.c}}
+\doxysubsubsection{\texorpdfstring{ai\_player()}{ai\_player()}}
+{\footnotesize\ttfamily int ai\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconnect4}{connect4}} $\ast$}]{board,  }\item[{int}]{diff }\end{DoxyParamCaption})}
+
+
+
+this is big brain time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the board as it currently is \\
+\hline
+{\em diff} & the ai difficlty\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the column the ai plays 
+\end{DoxyReturn}
+
+
+Definition at line 141 of file ai.\+c.
+
+\mbox{\Hypertarget{ai_8c_a09fcca915d63fde564cd12750a9adf07}\label{ai_8c_a09fcca915d63fde564cd12750a9adf07}} 
+\index{ai.c@{ai.c}!block@{block}}
+\index{block@{block}!ai.c@{ai.c}}
+\doxysubsubsection{\texorpdfstring{block()}{block()}}
+{\footnotesize\ttfamily void block (\begin{DoxyParamCaption}\item[{int}]{p,  }\item[{int}]{tempboard\mbox{[}$\,$\mbox{]}\mbox{[}7\mbox{]},  }\item[{int $\ast$}]{forbidden,  }\item[{int $\ast$}]{nb }\end{DoxyParamCaption})}
+
+
+
+test which collumns to avoid since playing them would lead to the other player\textquotesingle{}s win 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the current player \\
+\hline
+{\em tempboard} & the board used to test various things \\
+\hline
+{\em forbidden} & the the list of forbidden collumns \\
+\hline
+{\em nb} & the number of entries in the list of forbidden collumns\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list of forbidden columns and how many they are 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file ai.\+c.
+
+\mbox{\Hypertarget{ai_8c_aec59e8bd55bb61f00db3b34350429f3f}\label{ai_8c_aec59e8bd55bb61f00db3b34350429f3f}} 
+\index{ai.c@{ai.c}!count@{count}}
+\index{count@{count}!ai.c@{ai.c}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int count (\begin{DoxyParamCaption}\item[{int}]{board\mbox{[}$\,$\mbox{]}\mbox{[}7\mbox{]},  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+counts how many possibility to win the player passed in parameters has to win 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & the board we want to test \\
+\hline
+{\em p} & the player we want to test \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file ai.\+c.
+
+\mbox{\Hypertarget{ai_8c_a148de28d30a07ec3f648dadeec80b3a1}\label{ai_8c_a148de28d30a07ec3f648dadeec80b3a1}} 
+\index{ai.c@{ai.c}!forkblock@{forkblock}}
+\index{forkblock@{forkblock}!ai.c@{ai.c}}
+\doxysubsubsection{\texorpdfstring{forkblock()}{forkblock()}}
+{\footnotesize\ttfamily int forkblock (\begin{DoxyParamCaption}\item[{int}]{p,  }\item[{int}]{board\mbox{[}$\,$\mbox{]}\mbox{[}7\mbox{]},  }\item[{int}]{forbidden\mbox{[}$\,$\mbox{]},  }\item[{int $\ast$}]{nb }\end{DoxyParamCaption})}
+
+
+
+checks if there is a column in which if the other player played it would lead to him having two ways to win 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the player we want to check \\
+\hline
+{\em board} & the board as it currently is \\
+\hline
+{\em forbidden} & the list of forbiden columns \\
+\hline
+{\em nb} & the number of forbidden columns\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the column to block or -\/1 if none since 0 is accepted 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file ai.\+c.
+
+\mbox{\Hypertarget{ai_8c_ad0e1ba1fa41696f69226a65d116b7bec}\label{ai_8c_ad0e1ba1fa41696f69226a65d116b7bec}} 
+\index{ai.c@{ai.c}!winnable@{winnable}}
+\index{winnable@{winnable}!ai.c@{ai.c}}
+\doxysubsubsection{\texorpdfstring{winnable()}{winnable()}}
+{\footnotesize\ttfamily int winnable (\begin{DoxyParamCaption}\item[{int}]{p,  }\item[{int}]{board\mbox{[}$\,$\mbox{]}\mbox{[}7\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+checks if the player in the parameters can win 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the player we want to check \\
+\hline
+{\em board} & the board as it is currently\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the player can win else 0 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file ai.\+c.
+

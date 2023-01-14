@@ -1,0 +1,8 @@
+<map id="src/graphicalGame.h" name="src/graphicalGame.h">
+<area shape="rect" id="node1" title="declares the graphical game structures and functions." alt="" coords="86,5,242,32"/>
+<area shape="rect" id="node2" href="$window_manager_8h.html" title="declares the windowManager struct and all the rendering/display related functions." alt="" coords="35,80,175,107"/>
+<area shape="rect" id="node5" href="$ai_8h.html" title="contains the declaration of the ai struct and main ai function as the other function should&#39;nt be cal..." alt="" coords="199,80,246,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,101,181"/>
+<area shape="rect" id="node4" href="$color_8h.html" title="declares the color struct and all colors used throughout the graphiccal game." alt="" coords="147,229,213,256"/>
+<area shape="rect" id="node6" href="$connect4_8h.html" title="declares the connect4 struct and the game related functions." alt="" coords="176,155,269,181"/>
+</map>

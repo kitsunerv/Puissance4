@@ -1,0 +1,8 @@
+<map id="src/textualGame.c" name="src/textualGame.c">
+<area shape="rect" id="node1" title="contains the textual game structures and functions." alt="" coords="27,5,168,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" href="$textual_game_8h.html" title="contains the textual game structures and functions." alt="" coords="97,80,215,107"/>
+<area shape="rect" id="node4" href="$ai_8h.html" title="contains the declaration of the ai struct and main ai function as the other function should&#39;nt be cal..." alt="" coords="133,155,179,181"/>
+<area shape="rect" id="node5" href="$connect4_8h.html" title="declares the connect4 struct and the game related functions." alt="" coords="109,229,203,256"/>
+<area shape="rect" id="node6" href="$color_8h.html" title="declares the color struct and all colors used throughout the graphiccal game." alt="" coords="123,304,189,331"/>
+</map>

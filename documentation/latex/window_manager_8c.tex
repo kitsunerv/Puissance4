@@ -1,0 +1,246 @@
+\hypertarget{window_manager_8c}{}\doxysection{src/window\+Manager.c File Reference}
+\label{window_manager_8c}\index{src/windowManager.c@{src/windowManager.c}}
+
+
+contains all the rendering/display related functions.  
+
+
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}window\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}SDL2/\+SDL\+\_\+error.\+h\char`\"{}}\newline
+Include dependency graph for window\+Manager.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{window_manager_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{window_manager_8c_af469a0cf8dbe8e147640ac235c8ed19a}{window\+Manager\+\_\+init}} (\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$window, char $\ast$title, unsigned width, unsigned height)
+\begin{DoxyCompactList}\small\item\em Construct the window regarding the given parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{window_manager_8c_a91b4573d9cc77e92c20ad569c91fe1e9}{window\+Manager\+\_\+destroy}} (\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$window)
+\begin{DoxyCompactList}\small\item\em Free the memory allocated for the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{window_manager_8c_ae67a409e062230e4a62e7b210296ee37}{window\+Manager\+\_\+assign\+Texture}} (\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$window, unsigned posx\+Texture, unsigned posy\+Texture, unsigned width\+Texture, unsigned height\+Texture, \mbox{\hyperlink{structcolor}{color}} $\ast$data, unsigned desiredwidth, unsigned desiredheight)
+\begin{DoxyCompactList}\small\item\em Change the texture of a particular part of the renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{window_manager_8c_a5dfaaa9ee068852c0cdd3d985fee6c75}{wait\+Get\+Event}} (int $\ast$x, int $\ast$y, int $\ast$end)
+\begin{DoxyCompactList}\small\item\em waits for a mouse click and return it\textquotesingle{}s position if \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{window_manager_8c_a9f91af0e4492e2d1e4203f0625bae8b6}{window\+Manager\+\_\+wait\+Until\+Quit}} (\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$window)
+\begin{DoxyCompactList}\small\item\em Wait the the event of quitting the window. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{window_manager_8c_afd2fe3756543f698c07bcbf76e4b04e5}{msleep}} (long msec)
+\begin{DoxyCompactList}\small\item\em make the calling thread wait the specified amount of milisecond \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{window_manager_8c_a66be7df1837db7e7404670fb03aa91f0}{window\+\_\+add\+Image}} (\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$window, char $\ast$filepath, int posx, int posy, int width, int height)
+\begin{DoxyCompactList}\small\item\em displays an image on a particular part of the renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{window_manager_8c_a73fccf17167ae8bfafdf8d18e709996e}{window\+Manager\+\_\+assign\+Background}} (\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$window, unsigned posx\+Texture, unsigned posy\+Texture, unsigned width\+Texture, unsigned height\+Texture, \mbox{\hyperlink{structcolor}{color}} c)
+\begin{DoxyCompactList}\small\item\em create a uniform image on the renderer of the specified color \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+contains all the rendering/display related functions. 
+
+\begin{DoxyAuthor}{Authors}
+unknown, some of the function were modified (window\+Manager\+\_\+assign\+Texture) and added (msleep, wait\+Get\+Event, window\+\_\+add\+Image,window\+Manager\+\_\+assign\+Background) by Lucas CAGINICOLAU and Brandon CODAN 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{window_manager_8c_afd2fe3756543f698c07bcbf76e4b04e5}\label{window_manager_8c_afd2fe3756543f698c07bcbf76e4b04e5}} 
+\index{windowManager.c@{windowManager.c}!msleep@{msleep}}
+\index{msleep@{msleep}!windowManager.c@{windowManager.c}}
+\doxysubsubsection{\texorpdfstring{msleep()}{msleep()}}
+{\footnotesize\ttfamily int msleep (\begin{DoxyParamCaption}\item[{long}]{msec }\end{DoxyParamCaption})}
+
+
+
+make the calling thread wait the specified amount of milisecond 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msec} & the time we want to make the calling thread wait \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 126 of file window\+Manager.\+c.
+
+\mbox{\Hypertarget{window_manager_8c_a5dfaaa9ee068852c0cdd3d985fee6c75}\label{window_manager_8c_a5dfaaa9ee068852c0cdd3d985fee6c75}} 
+\index{windowManager.c@{windowManager.c}!waitGetEvent@{waitGetEvent}}
+\index{waitGetEvent@{waitGetEvent}!windowManager.c@{windowManager.c}}
+\doxysubsubsection{\texorpdfstring{waitGetEvent()}{waitGetEvent()}}
+{\footnotesize\ttfamily void wait\+Get\+Event (\begin{DoxyParamCaption}\item[{int $\ast$}]{x,  }\item[{int $\ast$}]{y,  }\item[{int $\ast$}]{end }\end{DoxyParamCaption})}
+
+
+
+waits for a mouse click and return it\textquotesingle{}s position if 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & this parameter serves to get the X coordinate of the mouse when it gets pressed \\
+\hline
+{\em y} & this parameter serves to get the Y coordinate of the mouse when it gets pressed \\
+\hline
+{\em end} & serves to signal if the close button of the window was pressed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 97 of file window\+Manager.\+c.
+
+\mbox{\Hypertarget{window_manager_8c_a66be7df1837db7e7404670fb03aa91f0}\label{window_manager_8c_a66be7df1837db7e7404670fb03aa91f0}} 
+\index{windowManager.c@{windowManager.c}!window\_addImage@{window\_addImage}}
+\index{window\_addImage@{window\_addImage}!windowManager.c@{windowManager.c}}
+\doxysubsubsection{\texorpdfstring{window\_addImage()}{window\_addImage()}}
+{\footnotesize\ttfamily void window\+\_\+add\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$}]{window,  }\item[{char $\ast$}]{filepath,  }\item[{int}]{posx,  }\item[{int}]{posy,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+displays an image on a particular part of the renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & is window where the change is applied. \\
+\hline
+{\em filepath} & is the path of the disere image \\
+\hline
+{\em posx} & is the position regarding the x-\/axis. \\
+\hline
+{\em posy} & is the position regarding the y-\/axis. \\
+\hline
+{\em width} & is the width of the image we want. \\
+\hline
+{\em height} & is the height of the image we want. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 141 of file window\+Manager.\+c.
+
+\mbox{\Hypertarget{window_manager_8c_a73fccf17167ae8bfafdf8d18e709996e}\label{window_manager_8c_a73fccf17167ae8bfafdf8d18e709996e}} 
+\index{windowManager.c@{windowManager.c}!windowManager\_assignBackground@{windowManager\_assignBackground}}
+\index{windowManager\_assignBackground@{windowManager\_assignBackground}!windowManager.c@{windowManager.c}}
+\doxysubsubsection{\texorpdfstring{windowManager\_assignBackground()}{windowManager\_assignBackground()}}
+{\footnotesize\ttfamily void window\+Manager\+\_\+assign\+Background (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$}]{window,  }\item[{unsigned}]{posx\+Texture,  }\item[{unsigned}]{posy\+Texture,  }\item[{unsigned}]{width\+Texture,  }\item[{unsigned}]{height\+Texture,  }\item[{\mbox{\hyperlink{structcolor}{color}}}]{color }\end{DoxyParamCaption})}
+
+
+
+create a uniform image on the renderer of the specified color 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & is window where the change is applied. \\
+\hline
+{\em posx\+Texture} & is the position regarding the x-\/axis. \\
+\hline
+{\em posy\+Texture} & is the position regarding the y-\/axis. \\
+\hline
+{\em width\+Texture} & is the width of the rectangle we change. \\
+\hline
+{\em height\+Texture} & is the height of the rectangle we change. \\
+\hline
+{\em color} & is the color wanted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 160 of file window\+Manager.\+c.
+
+\mbox{\Hypertarget{window_manager_8c_ae67a409e062230e4a62e7b210296ee37}\label{window_manager_8c_ae67a409e062230e4a62e7b210296ee37}} 
+\index{windowManager.c@{windowManager.c}!windowManager\_assignTexture@{windowManager\_assignTexture}}
+\index{windowManager\_assignTexture@{windowManager\_assignTexture}!windowManager.c@{windowManager.c}}
+\doxysubsubsection{\texorpdfstring{windowManager\_assignTexture()}{windowManager\_assignTexture()}}
+{\footnotesize\ttfamily void window\+Manager\+\_\+assign\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$}]{window,  }\item[{unsigned}]{posx\+Texture,  }\item[{unsigned}]{posy\+Texture,  }\item[{unsigned}]{width\+Texture,  }\item[{unsigned}]{height\+Texture,  }\item[{\mbox{\hyperlink{structcolor}{color}} $\ast$}]{texture,  }\item[{unsigned}]{desiredwidth,  }\item[{unsigned}]{desiredheight }\end{DoxyParamCaption})}
+
+
+
+Change the texture of a particular part of the renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & is window where the change is applied. \\
+\hline
+{\em posx\+Texture} & is the position regarding the x-\/axis. \\
+\hline
+{\em posy\+Texture} & is the position regarding the y-\/axis. \\
+\hline
+{\em width\+Texture} & is the width of the texture. \\
+\hline
+{\em height\+Texture} & is the height of the texture. \\
+\hline
+{\em texture} & is the texture itself (it is a raw matrix). \\
+\hline
+{\em desiredwidth} & is the width of the rectangle we change. \\
+\hline
+{\em desiredheight} & is the height of the rectangle we change. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file window\+Manager.\+c.
+
+\mbox{\Hypertarget{window_manager_8c_a91b4573d9cc77e92c20ad569c91fe1e9}\label{window_manager_8c_a91b4573d9cc77e92c20ad569c91fe1e9}} 
+\index{windowManager.c@{windowManager.c}!windowManager\_destroy@{windowManager\_destroy}}
+\index{windowManager\_destroy@{windowManager\_destroy}!windowManager.c@{windowManager.c}}
+\doxysubsubsection{\texorpdfstring{windowManager\_destroy()}{windowManager\_destroy()}}
+{\footnotesize\ttfamily void window\+Manager\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Free the memory allocated for the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & is the window we destroy. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file window\+Manager.\+c.
+
+\mbox{\Hypertarget{window_manager_8c_af469a0cf8dbe8e147640ac235c8ed19a}\label{window_manager_8c_af469a0cf8dbe8e147640ac235c8ed19a}} 
+\index{windowManager.c@{windowManager.c}!windowManager\_init@{windowManager\_init}}
+\index{windowManager\_init@{windowManager\_init}!windowManager.c@{windowManager.c}}
+\doxysubsubsection{\texorpdfstring{windowManager\_init()}{windowManager\_init()}}
+{\footnotesize\ttfamily int window\+Manager\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$}]{window,  }\item[{char $\ast$}]{title,  }\item[{unsigned}]{width,  }\item[{unsigned}]{height }\end{DoxyParamCaption})}
+
+
+
+Construct the window regarding the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & is the window we created. \\
+\hline
+{\em title} & is the window title \\
+\hline
+{\em width} & is the window width \\
+\hline
+{\em height} & is the window height \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if a problem occurs, $>$0 otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file window\+Manager.\+c.
+
+\mbox{\Hypertarget{window_manager_8c_a9f91af0e4492e2d1e4203f0625bae8b6}\label{window_manager_8c_a9f91af0e4492e2d1e4203f0625bae8b6}} 
+\index{windowManager.c@{windowManager.c}!windowManager\_waitUntilQuit@{windowManager\_waitUntilQuit}}
+\index{windowManager\_waitUntilQuit@{windowManager\_waitUntilQuit}!windowManager.c@{windowManager.c}}
+\doxysubsubsection{\texorpdfstring{windowManager\_waitUntilQuit()}{windowManager\_waitUntilQuit()}}
+{\footnotesize\ttfamily void window\+Manager\+\_\+wait\+Until\+Quit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structwindow_manager}{window\+Manager}} $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Wait the the event of quitting the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & is the window we are waiting for the event. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 113 of file window\+Manager.\+c.
+

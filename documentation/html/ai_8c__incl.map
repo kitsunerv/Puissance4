@@ -1,0 +1,9 @@
+<map id="src/ai.c" name="src/ai.c">
+<area shape="rect" id="node1" title="all the ai functions." alt="" coords="186,5,254,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,69,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="93,80,160,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="185,80,255,107"/>
+<area shape="rect" id="node5" href="$ai_8h.html" title="contains the declaration of the ai struct and main ai function as the other function should&#39;nt be cal..." alt="" coords="279,80,326,107"/>
+<area shape="rect" id="node6" href="$connect4_8h.html" title="declares the connect4 struct and the game related functions." alt="" coords="287,155,380,181"/>
+<area shape="rect" id="node7" href="$color_8h.html" title="declares the color struct and all colors used throughout the graphiccal game." alt="" coords="301,229,366,256"/>
+</map>
